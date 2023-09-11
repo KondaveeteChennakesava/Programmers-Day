@@ -1,0 +1,154 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#header {
+	height: 60px;
+	padding-top: auto;
+	padding-bottom: auto;
+}
+
+#heading {
+	font-size: 25px;
+	margin-left: 15px;
+}
+
+.card {
+	padding: 10px;
+	border: 3px solid black;
+	border-radius: 25px;
+}
+
+.jumbotron {
+	background-image: url(images/bg1.avif);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 750px;
+	padding-top: 60px;
+}
+
+i {
+	color: #225fec;
+	margin-bottom: 10px;
+}
+
+.img {
+	float: left;
+	width: 50%;
+}
+
+.info {
+	float: right;
+	width: 50%;
+	height: 600px;
+}
+
+.stats {
+	background-image: url(images/statistics.avif);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 800px;
+}
+
+#btn-back-to-top {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	display: none;
+	border-radius: 50%;
+}
+
+.footer {
+	background-color: gray;
+}
+
+/*#menu{
+    display: none;
+}
+
+@media screen and (max-width:674px){
+    #menu{
+        display: block;
+    }
+    #navs{
+        display: none;
+    }
+}*/
+
+@media screen and (max-width:770px) {
+	.card {
+		margin-bottom: 8px;
+	}
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 30px;
+	/*  background-color: blue;*/
+	color: white;
+	height: 8vh;
+}
+
+.logo {
+	color: black;
+	font-size: 25px;
+	cursor: pointer;
+}
+
+nav .links {
+	display: flex;
+}
+
+nav .links a {
+	color: blue;
+	text-decoration: none;
+}
+
+.links p {
+	padding: 15px;
+}
+
+#mobile-menu-btn {
+	display: none;
+}
+
+.mobile-menu {
+	color: white;
+	display: none;
+	position: absolute;
+	right: 0;
+	height: 60vh;
+	width: 70vw;
+}
+
+@media (max-width: 770px) {
+	#mobile-menu-btn {
+		display: block;
+		color: blue;
+	}
+
+	nav p {
+		display: none;
+	}
+
+	.mobile-menu {
+		display: none;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		background-color: rgba(11, 11, 145, 0.892);
+	}
+
+	.mobile-menu a {
+		color: cyan;
+		text-decoration: none;
+		border-radius: 3px solid black;
+	}
+}
